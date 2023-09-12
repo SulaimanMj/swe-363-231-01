@@ -1,0 +1,8 @@
+/* CSS Ex #1 Dark theme */
+Body {
+  background-color: #023;
+  color: #ffffff;
+}
+
+a:active{ color:greenyellow; }
+a:visited{ color:rgb(57, 161, 5); }
