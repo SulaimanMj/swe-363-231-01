@@ -1,0 +1,104 @@
+body{ 
+    font-family: sans-serif, Arial, Helvetica, "Times New Roman";
+    color:#3e4749;
+}
+
+
+nav li{
+    display : inline-block;
+    margin: 0px 10px 0px 10px;
+}
+
+.top {
+    background-color:#ff4800;
+  }
+
+em {
+    color:#faa000;
+    background-color: blue;
+  }
+
+input[name=message] {
+    height: 50px;
+  }
+
+input[type=text] {
+    border-color: lightgray;
+  }
+
+
+input {
+    height: 20px;
+  }
+
+body a:hover {
+    cursor: pointer;
+  }
+
+::selection {
+    background-color: #de6e41;
+    color: #ffffff;
+  }
+ 
+tbody tr:nth-child(odd){
+    background-color:#b6b5b2;
+  }
+  
+tbody tr:hover, tbody tr:hover td{
+    background-color:#b6b5b271;
+  }
+h2 + p::first-letter {
+    font-size: x-large;
+  }
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform:uppercase;
+  }
+
+h2 {
+    font-family: sans-serif;
+  }
+
+#the_most_important {
+    text-transform:uppercase;
+    background-color:gold;
+  }
+
+  
+
+nav ul li:first-child a{
+
+    text-decoration:underline;
+    color:#3e4749;
+  }
+
+
+
+nav ul {
+    padding-left: 1%;
+}
+
+a {
+    text-decoration: none;
+    color: #4ba918;
+}
+
+header {
+    background-color: #879499;
+    color: #ffffff;
+    padding: 40px 0px 40px 0px;
+}
+
+.product {
+    background-color: rgba(135, 148, 152, 0.4);
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    text-transform:uppercase;
+  }

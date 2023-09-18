@@ -6,3 +6,15 @@ Body {
 
 a:active{ color:greenyellow; }
 a:visited{ color:rgb(57, 161, 5); }
+
+th {
+  text-transform:uppercase;
+}
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+p {
+  font-family: 'Inter', sans-serif;
+}
