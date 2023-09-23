@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Style.css">
+    <title>TechTrove</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        /* Loader styles */
+        .loader-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        .loader {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 30%; /* Make the loader 50% of the viewport width */
+            aspect-ratio: 1; /* Maintain the aspect ratio (1:1) for a circular loader */
+            animation: spin 2s linear infinite; /* Rotate the loader */
+        }
+
+        .loader-text {
+            font-size: 24px;
+        }
+
+        /* Hide loader initially */
+        .hidden {
+            display: none;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="loader-container" id="loader">
+        <div class="loader"></div>
+        <div class="loader-text"></div>
+    </div>
+
+    
+    <div class="header">
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="/Assests/TechTrove.png" width="125px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="TechTrove.html">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Account</a></li>
+            </ul>
+        </nav>
+        <img src="/Assests/cart.png" width="30px" height="30px">
+        <img src="/Assests/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <h1>Give Yourself<br> A Perfect Device!</h1>
+            <p>Success isn't always about greatness. It's about consistency. Consistent<br> hard work gains success. Greatness will come.</p>
+            <a href="" class="btn">Explore Now &#8594;</a>
+        </div>
+        <div class="col-2">
+            <img src="/Assests/BG.jpg">
+        </div>
+    </div>
+ </div>
+</div>
+
+<!--- Categories---->
+<div class="categories">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <img src="/Assests/Headset.png">
+            </div>
+            <div class="col-3">
+                <img src="/Assests/Iphone14.png">
+            </div>
+            <div class="col-3">
+                <img src="/Assests/laptop2.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--- Products---->
+<div class="small-container">
+    <h2 class="title">Featured Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <div class="watermark">S M J</div>
+            <img src="/Assests/Gpro2.png">
+            <h4>Logitech G Pro Headset</h4>
+            <p class="date">2021/6/12</p>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+
+            </div>
+            <p>$200.00</p>
+        </div>
+        <div class="col-4">
+            <div class="watermark">S M J</div>
+            <img src="/Assests/Gpro.png">
+            <h4>Logitech G Pro Lightspeed</h4>
+            <p class="date">2022/6/12</p>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+
+            </div>
+            <p>$80.00</p>
+        </div>
+        <div class="col-4">
+            <div class="watermark">S M J</div>
+            <img src="/Assests/Gpro3.png">
+            <h4>Logitech G Pro Keyboard</h4>
+            <p class="date">2022/2/11</p>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+
+            </div>
+            <p>$100.00</p>
+        </div>
+        <div class="col-4">
+            <div class="watermark">S M J</div>
+            <img src="/Assests/s23.png">
+            <h4>Samsung s23 </h4>
+            <p class="date">2022/11/19</p>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+
+            </div>
+            <p>$1200.00</p>
+        </div>
+    </div>
+    <h2 class="title">Latest Products</h2>
+    <div class="col-4">
+        <img src="/Assests/Apple.png">
+        <h4>Apple Bundle Pack </h4>
+        <p class="date">2023/1/1</p>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+        </div>
+        <p>$4900.00</p>
+    </div>
+
+    <div class="col-4">
+        <img src="/Assests/SonyBundle.png">
+        <h4>PS5 Bundle Pack </h4>
+        <p class="date">2022/1/1</p>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+        </div>
+        <p>$2500.00</p>
+    </div>
+</div>
+
+<!--- Offer---->
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="/Assests/iphone14.png" class="offer-img">
+            </div>
+            <div class="col-2">
+                <p>Exclusively Available on TechTrove</p>
+                <h1>iPhone 14 Pro Max</h1>
+                <small>iPhone 14 Pro Max is the most powerful and advanced smartphone we have ever made. It features our largest display yet, a Pro camera system that takes low-light photography to the next level, and an all-new Ceramic Shield front cover, tougher than any smartphone glass.</small>
+                <a href="" class="btn">Buy Now &#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--- Testimonials---->
+<div class="testimonial">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>This electronic store website is a gem. They have it all - great selection, user-friendly interface, competitive prices, responsive customer service, speedy shipping, and effortless returns. A solid five stars!</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <img src="/Assests/user.png">
+                <h3>Khaled AlSaad</h3>
+            </div>
+
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>This electronic store website is great. They have a wide selection, user-friendly site, good prices, and responsive customer service. Shipping is prompt, and returns are straightforward. Four stars!</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <img src="/Assests/user2.png">
+                <h3>Ali AlQahtani</h3>
+            </div>
+
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>This electronic store is excellent! They offer a fantastic selection, a user-friendly website, competitive prices, top-notch customer service, swift shipping, and easy returns. A solid five stars!</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <img src="/Assests/user3.png">
+                <h3>Sarah AlHarbi</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--- Brands---->
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+
+            <div class="col-5">
+                <img src="/Assests/intel.png">
+            </div>
+            <div class="col-5">
+                <img src="/Assests/samsung.png">
+            </div>
+            <div class="col-5">
+                <img src="/Assests/logitech.png">
+            </div>
+            <div class="col-5">
+                <img src="/Assests/Paypal.png">
+            </div>
+            <div class="col-5">
+                <img src="/Assests/philips.png">
+            </div>
+            <div class="col-5">
+                <img src="/Assests/lenovo.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--- Footer---->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Downlaod Our App</h3>
+                <p> Dont Miss out on the Mobile App Special Offers !</p>
+                <div class="app-logo">
+                    <img src="/Assests/stores.png">
+
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="/Assests/TechTrove.png">
+                <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                    <li>Tiktok</li>
+
+                </ul>
+
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">© 2021 TechTrove | All Rights Reserved | Terms and Conditions</p>
+    </div>
+</div>
+
+<!---- JS Toggle Menu---->
+
+<script>
+    setTimeout(function() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("content").style.display = "block";
+    }, 2000);
+
+    
+
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+        
+                
+
+
+
+</body>
+</html>
