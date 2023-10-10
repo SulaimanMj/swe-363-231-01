@@ -46,3 +46,8 @@ body {
 .cell.O {
     color: #1976d2;
 }
+
+.cell:focus {
+    outline: none;
+    box-shadow: 0 0 10px #1976d2;
+}
